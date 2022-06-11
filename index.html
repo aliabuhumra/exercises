@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>1- Simplify the following big O expressions as much as possible:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">expressions</th>
+          <th rowspan="2">Time Complexity</th>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">السبب</th>
+          <th rowspan="2">السبب بمصطلح برمجي</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>O(n + 10)</td>
+          <td>O(n)</td>
+          <td>Linear</td>
+          <td>
+            لانه ليس رقم محدد بل رقم يتغير حجمه في المصفوفه وسواء كان حجمه 1 او
+            1000000 سيتعين على اللوب او الاداه التي تبحث ان تنتهي بشكل كامل من
+            المهمه وهذا سياخذ وقت لذلك هناك حل لاصلاح هذه المشكله هو استخدام
+            الثوابت n اسواء سيناريو في الكود كان
+          </td>
+          <td>Finding an element in an unsorted array</td>
+        </tr>
+        <tr>
+          <td>O(100 * n)</td>
+          <td>O(n)</td>
+          <td>Linear</td>
+          <td>كما شرحت في المثال الذي قبله .........👆</td>
+          <td>كما شرحت في المثال الذي قبله .........👆</td>
+        </tr>
+        <tr>
+          <td>O(25)</td>
+          <td>25</td>
+          <td>constant</td>
+          <td>
+            افضل سيناريو ان يكون الوظيفه او المتغير بقيمه ثابته كما في المثال
+          </td>
+          <td>Adding an element to the front of a linked list</td>
+        </tr>
+        <tr>
+          <td>O(n^2 + n^3)</td>
+          <td>o(n<sup>3</sup>)</td>
+          <td>cubic</td>
+          <td>
+            order of growth الوظيفه مقارنه بالادخال تكون في وضع تتنامى فيه بشكل
+            اكبر مثلن اذا كان الادخال بشكل بسيط هل الوظيفه تزيد بشكل كبير
+          </td>
+          <td>Matrix multiplication</td>
+        </tr>
+        <tr>
+          <td>O(n + n + n + n)</td>
+          <td>o(n)</td>
+          <td>linear</td>
+          <td>كما سبق ذكره 👆</td>
+          <td>كما سبق ذكره 👆</td>
+        </tr>
+        <tr>
+          <td>O(1000 * log(n) + n)</td>
+          <td>O(log(n))</td>
+          <td>Logarithmic</td>
+          <td>تكون حالته متوسطه وليست سيئه ولكن تعتبر جيده جدا</td>
+          <td>Finding an element in a sorted array</td>
+        </tr>
+        <tr>
+          <td>O(1000 * n * log(n) + n)</td>
+          <td>nlog n</td>
+          <td>Linear Logarithmic</td>
+          <td>يكون النمو عالي للوظيفه ولكن ليس اسواء درجه</td>
+          <td>Sorting n items by Divide and Conquer</td>
+        </tr>
+        <tr>
+          <td>O(2^n + n^2)</td>
+          <td>O(n<sup>3</sup>)</td>
+          <td>Quadratic</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=nrSVRPYy76c"
+              >الشرح هنا ممتاز في فيديو
+            </a>
+          </td>
+          <td>Shortest path between 2 nodes in a graph</td>
+        </tr>
+        <tr>
+          <td>O(5 + 3 + 1</td>
+          <td>O(1)</td>
+          <td>constant</td>
+          <td>
+            افضل سيناريو ان يكون الوظيفه او المتغير بقيمه ثابته كما في المثال
+          </td>
+          <td>Adding an element to the front of a linked list</td>
+        </tr>
+        <tr>
+          <td>O(n + n^(1/2) + n^2 + n * log(n)^10)</td>
+          <td>O(n<sup>3</sup>)</td>
+          <td>Quadratic</td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=nrSVRPYy76c"
+              >الشرح هنا ممتاز في فيديو
+            </a>
+          </td>
+          <td>Shortest path between 2 nodes in a graph</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Exercice 2 : Time & Space complexity</h2>
+    <ol>
+      <li>
+        <span>Time Complexity = O(n) nيتغير الوقت حسب العدد المدخل </span>
+        -
+        <span>Space Complexity = O(1) متغير واحد ثابت</span>
+      </li>
+      <li>
+        <span>Time Complexity = O(1)أسوأ سيناريو n=10</span>
+        -
+        <span>Space Complexity = O(1) تأخذ مساحة متغير واحد في الداكرة</span>
+      </li>
+      <li>
+        <span>Time Complexity = O(1) nالمدة حسب العدد </span>
+        -
+        <span>Space Complexity = O(1) تأخذ مساحة متغير واحد</span>
+      </li>
+      <li>
+        <span>Time Complexity = O(n^2) nested loops </span>
+        -
+        <span>Space Complexity = O(n) n تاخذ المتغير حسب قيمه </span>
+      </li>
+      <li>
+        <span>Time Complexity = O(n) تاخذ المده حسب قيمه الادخال</span>
+        -
+        <span>Space Complexity = O(n) يحجز مساحة حسب مرات التكرار</span>
+      </li>
+      <li>
+        <span
+          >Time Complexity = O(log (n)) يبحث عن العنصر بطريقة binary search
+        </span>
+        -
+        <span>Space Complexity = O(n) متغير واحد ثابت </span>
+      </li>
+    </ol>
+
+    <h2>Exercice 3 : Big O Calculation</h2>
+    <ol>
+      <li>
+        <span
+          >Time Complexity = O(n * m) = O(n^2) nيتغير الوقت حسب العدد المدخل
+        </span>
+        -
+        <span>Space Complexity = O(1) تحجز مساحة حسب مرات التكرار</span>
+      </li>
+      <li>
+        <span>Time Complexity = O(n)التكرار n مرة حسب عدد عناصر ال array</span>
+        -
+        <span>Space Complexity = O(1) يحجز مكان واحد لقيم ال array </span>
+      </li>
+      <li>
+        <span>Time Complexity = O(n) التكرار حتى يجد العنصر المطلوب</span>
+        -
+        <span
+          >Space Complexity = O(1) يحجز مكان واحد لقيمة index العنصر
+          المطلوب</span
+        >
+      </li>
+      <li>
+        <span>Time Complexity = O(n^2) nested loops </span>
+        -
+        <span>Space Complexity = O(n) n تاخذ المتغير حسب قيمه </span>
+      </li>
+      <li>
+        <span>Time Complexity = O(n) تاخذ المده حسب قيمه الادخال</span>
+        -
+        <span>Space Complexity = O(n) يحجز مساحة حسب مرات التكرار</span>
+      </li>
+      <li>
+        <span>Time Complexity = O(n) Loop </span>
+        -
+        <span>Space Complexity = O(log (n)) Constant</span>
+      </li>
+    </ol>
+
+    <h2>Exercice 4 : Reverse Word & Reverse Number</h2>
+    <form action="" class="form1">
+      <div class="box">
+        <label for="string"
+          >قم بكتابة كود يستقبل نصا، فيعيده لكن مع عكس الكلمات التي يزيد عدد
+          حروفها عن 4 ومع جعل الحرف الأول من كل كلمة كبير
+        </label>
+        <input
+          type="text"
+          class="inputStr"
+          id="string"
+          placeholder="Add a word"
+        />
+        <small class="resultStr"></small>
+      </div>
+
+      <div class="box">
+        <label for="number"
+          >قم بعمل تستقبل رقما صحيحا وتعيده معكوسا كما في الجدول التالي</label
+        >
+        <input
+          type="number"
+          id="number"
+          class="inputNum"
+          placeholder="Add Number"
+        />
+        <small class="resultNum">0</small>
+      </div>
+
+      <div class="box">
+        <label for="sentence">
+          مطلوب منك أن تقوم بعمل دالة تستقبل رقما مع نص. ثم ترجع قائمة محتوية
+          ذلك النص مقسما إلى جمل وكل جملة عدد كلماتها يساوي العدد</label
+        >
+
+        <input
+          type="text"
+          class="inputSen"
+          id="sentence"
+          placeholder="Add a sentence"
+        />
+        <input type="number" class="numberChunk" />
+        <small class="resultSen"></small>
+      </div>
+
+      <div class="box">
+        <label for="line">اكتب عدد الاسطر للمثلث</label>
+        <input
+          type="number"
+          id="line"
+          class="inputline"
+          placeholder="Add numbers line"
+        />
+        <code class="resultline"></code>
+      </div>
+
+      <div class="box">
+        <label for="vowel"
+          >أنشئ دالة تستقبل نصا وظيفتها اختبار النص إن كان يحتوي حروفا متحركة أو
+          لا وكم عدد الحروف المتحركة إن وجدت</label
+        >
+        <input
+          type="text"
+          id="vowel"
+          class="inputvowel"
+          placeholder="Find the vowel characters"
+        />
+        <small class="resultvowel"></small>
+      </div>
+
+      <div>
+        <h3>
+          كتابة دالة تسمى fixSortedArray تستقبل القائمة شبه المرتبة -من الأصغر
+          حتى الأكبر
+        </h3>
+        <img src="one.png" alt="one" />
+      </div>
+
+      <div class="box">
+        <h3>Binary search ادخل الرقم الذي تريد معرفه مكانه بالمصفوفه</h3>
+        <input
+          type="number"
+          id="binary1"
+          name="binary1"
+          class="binary1"
+          placeholder="search by binary"
+        />
+        <small class="resultbin"></small>
+      </div>
+
+      <div class="box">
+        <label for="sort">
+          قم بعمل برنامج يستمر باستقبال الأرقام ويقوم بترتيبها مباشرة حتى تبقى
+          القائمة التي أنشئت مرتبة ويعرضها. وإذا أدخل المستخدم نقطة "." يتوقف
+          البرنامج ويعرض الناتج النهائي،
+        </label>
+      </div>
+      <button type="submit">Submit to see the results</button>
+    </form>
+    <script src="exercises.js"></script>
+  </body>
+</html>
